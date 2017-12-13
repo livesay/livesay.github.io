@@ -1,0 +1,9 @@
+
+h1 {
+	background: #dfe3e6 url('images/bullet.gif') no-repeat 7px center;
+	margin: 0;
+	padding: 3px 0 3px 25px;
+	border: solid blue 1px;
+	color: blue;
+}
+

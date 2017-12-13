@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Up Nerdy</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Roboto|Spectral+SC" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+        });
+    </script>
+
+    <script src="js/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#slider").bxSlider({
+                auto: true,
+                autoControls: true,
+                captions: true,
+                minSlides: 2,
+                maxSlides: 2,
+                slideWidth: 250,
+                slideMargin: 10
+            });
+        });
+    </script>
+
+<body>
+<header>
+    <h2>Straight Up Nerdy</h2>
+</header>
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a class="current" href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="lastitem" href="work.html">Experience</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h1 id="bio">Hey! I'm Danny.</h1>
+        <div>
+            <p>I'm a Psychology major and Computational Science minor at the University of South Carolina Beaufort. I
+                enjoy Jiu-Jitsu, photography, hanging out with my dog,
+                playing video games, and psychological research. I'm great at solving puzzles, I love writing stories,
+                teaching Jiu-Jitsu, and I'm a huge fan of 3-D puzzles.
+                I'm an aspiring psychologist and writer who's passionate about sociology and how the world works.</p>
+
+            <p>Take a look around to get to know me better or even look at some of my <a href="projects.html">work</a>.
+            </p>
+        </div>
+
+        <div id="viewport">
+            <h3>A Snapshot of My Hobbies</h3>
+            <ul id="slider">
+                <li><img src="images/cheekwood1_thumb.jpg" alt="Cheekwood"></li>
+                <li><img src="images/rosie_dock1_thumb.jpg" alt="Rosie on the dock"></li>
+                <li><img src="images/jiujitsu4_thumb.jpg" alt="Jiu-Jitsu"></li>
+                <li><img src="images/jiujitsu2_thumb.jpg" alt=Jiu-Jitsu"></li>
+                <li><img src="images/rosie_field_thumb.jpg" alt="Rosie"></li>
+                <li><img src="images/rosie_dock2_thumb.jpg" alt="Rosie on the dock"></li>
+                <li><img src="images/cheekwood2_thumb.jpg" alt="Cheekwood"></li>
+                <li><img src="images/rosie3_thumb.jpg" alt="Rosie"></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <aside>
+        <h3>Connect With Me:</h3>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="https://www.instagram.com/geekystitch/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.instagram.com/thecutest_rosie/" target="_blank">My Dog's Instagram</a></li>
+                <li><a href="https://www.facebook.com/danielle.livesay.1" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/_spicyramenshop" target="_blank">Twitter</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+
+<footer>
+    <p> &copy;&nbsp;2017 Danny Livesay</p>
+    <p id="date"></p>
+
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+    </script>
+</footer>
+</body>
+
+</html>

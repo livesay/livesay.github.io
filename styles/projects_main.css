@@ -1,0 +1,232 @@
+/* Styles for the projects page */
+
+html {
+    height: 100%;
+    background: rgba(105, 105, 105, 1);
+}
+
+header {
+
+    padding: 0.5em;
+
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(32, 143, 158, 1) 48%, rgba(255, 255, 255, 1) 100%);
+    /*background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(48%, rgba(32,143,158,1)), color-stop(100%, rgba(255,255,255,1)));*/
+    background: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(32, 143, 158, 1) 48%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(32, 143, 158, 1) 48%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(32, 143, 158, 1) 48%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(45deg, rgba(255, 255, 255, 1) 0%, rgba(32, 143, 158, 1) 48%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=1);
+
+    border-bottom: 1px solid dimgrey;
+}
+
+body {
+    width: 90%; /* changed from 990px */
+    max-width: 1100px; /* maximum width of page */
+    background-color: white;
+    margin: 1em auto;
+    padding: 0;
+    border: 1px solid black;
+
+}
+
+header h2 {
+    font-family: 'Spectral SC', sans-serif;
+    color: dimgrey;
+    text-shadow: 2px 2px 0 white;
+    padding-top: .25em;
+    margin-left: 4.545454%; /* 45px/990px * 100 = 4.54545454*/
+
+}
+
+header h3 {
+    margin-left: 2.525252%; /* 25px/990px * 100 = 2.525252 */
+}
+
+header h3, #project, section p, section h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    width: 63.535353%; /* 629px/990px * 100 = 63.535353 */
+    float: left;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+    margin-left: 3.5em;
+}
+
+section p {
+    width: 79.49125%; /* 500px/629px * 100 = 79.491255 */
+}
+
+section h1 {
+    font-size: 175%;
+
+}
+
+section div h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5.555555%; /* 55px/990px * 100 = 5.555555  */
+}
+
+aside {
+    width: 30.303030%; /* 300px/990px * 100 = 30.303030 */
+    float: right;
+    margin-right: 0.909090%; /* 9px/990px * 100 = 0.909090 */
+}
+
+aside h3 {
+    margin-top: 2.5em;
+    margin-left: 2.25em;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkcyan;
+}
+
+a:hover, a:focus {
+    color: dimgrey;
+    text-decoration: underline;
+}
+
+/* Styles for the horizontal navigation menu */
+#nav_menu {
+    font-size: 113%;
+    margin-left: 13%;
+    margin-right: 5%;
+}
+
+#nav_menu ul {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#nav_menu ul li {
+    float: left;
+    width: 18.181818%; /* 180px/990px * 100 = 18.181818 */
+    margin-left: 0.5%; /* 15px/990px * 100 = 1.515151 */
+    margin-right: 3%;
+}
+
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0 1em 0;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-right: 1px solid white;
+    margin: 0;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    color: dimgrey;
+    text-decoration: underline;
+}
+
+#nav_menu ul li a.lastitem {
+    border-right: none;
+}
+
+#nav_menu a.current {
+    text-decoration: underline;
+
+}
+
+/* styles for the vertical nav list */
+#nav_list ul {
+    list-style: none;
+
+}
+
+#nav_list ul li {
+    width: 88.461538%; /* 230px/260px * 100 = 88.461538 */
+    padding: 0.769230%; /* 2px/260px * 100 = 0.769230 */
+}
+
+/* Styles for the footer */
+footer {
+    border-top: 1px solid black;
+    font-family: 'Spectral SC', sans-serif;
+    font-size: 95%;
+    clear: both;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 0.930232%; /* 10px/1075px * 100 = 0.930232 */
+    margin-bottom: 0.930232%; /* 10px/1075px * 100 = 0.930232 */
+}
+
+/* Media queries */
+
+#nav_list2 {
+
+    display: none;
+}
+
+#mobile_menu {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #nav_menu {
+        display: none;
+    }
+
+    #mobile_menu {
+        display: block;
+    }
+
+    body {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (max-width: 1183px) {
+
+    aside {
+        float: left;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    body {
+        font-size: 85%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    body {
+        font-size: 60%
+    }
+
+    section {
+        display: none;
+    }
+
+    aside {
+        display: none;
+    }
+
+    #nav_list2 {
+        display: block;
+    }
+}

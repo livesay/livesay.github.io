@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Up Nerdy</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Roboto|Spectral+SC" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/edu_main.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.11.2.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+        });
+    </script>
+
+    <script src="js/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#accordion").accordion(
+                {
+                    event: "click",
+                    heightStyle: "content",
+                    collapsible: true,
+                    active: false
+                });
+        });
+    </script>
+
+</head>
+
+<body>
+<header>
+    <h2>Straight Up Nerdy</h2>
+</header>
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="current" href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="lastitem" href="work.html">Experience</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h1 id="uni">University Classes</h1>
+        <div id="accordion">
+            <h3>Psychology Classes</h3>
+            <div>
+                <p>
+                <ul>
+                    <li>Introduction to Psychology</li>
+                    <li>Lifespan Developmental Psychology</li>
+                    <li>Statistics Lab in Psychology</li>
+                    <li>Social Psychology</li>
+                    <li>Biological Psychology</li>
+                    <li>Research Methods in Psychology</li>
+                    <li>Learning and Memory</li>
+                    <li>Abnormal Psychology</li>
+                    <li>Cognitive Psychology</li>
+                    <li>Clinical Psychology</li>
+                    <li>Laboratory in Psychology</li>
+                    <li>Personality Theory</li>
+                </ul>
+                </p>
+            </div>
+            <h3>Mathematics & Computational Science Classes</h3>
+            <div>
+                <ul>
+                    <li>Precalculus Mathematics</li>
+                    <li>Elementary Statistics</li>
+                    <li>HTML & Javascript</li>
+                    <li>Java Programming and Algorithmic Design</li>
+                    <li>Computing in Matlab</li>
+                </ul>
+            </div>
+            <h3>Sociology Classes</h3>
+            <div>
+                <ul>
+                    <li>Introduction to Sociology</li>
+                    <li>Sociology of Crime</li>
+                    <li>Introduction to Gender Studies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <aside>
+        <h3>Helpful Links</h3>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="http://www.uscb.edu/about_uscb/index.html" target="_blank">About USCB</a></li>
+                <li>
+                    <a href="http://www.uscb.edu/academics/academic_departments/school-of-humanities-and-social-sciences/social_sciences/psychology/index.html"
+                       target="_blank"> Our Psychology Department</a></li>
+                <li><a href="https://www.facebook.com/UniversityofSouthCarolinaBeaufort" target="_blank">USCB
+                    Facebook</a></li>
+
+            </ul>
+        </nav>
+    </aside>
+</main>
+
+<footer>
+    <p> &copy;&nbsp;2017 Danny Livesay</p>
+    <p id="date"></p>
+
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+    </script>
+</footer>
+</body>
+
+</html>

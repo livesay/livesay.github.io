@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Straight Up Nerdy</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Mukta|Roboto|Spectral+SC" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/projects_main.css">
+    <link rel="stylesheet" href="styles/lightbox.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"});
+        });
+    </script>
+
+    <script src="js/lightbox.min.js"></script>
+
+</head>
+
+<body>
+<header>
+    <h2>Straight Up Nerdy</h2>
+</header>
+
+<nav id="mobile_menu"></nav>
+
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a class="current" href="projects.html">Projects</a></li>
+        <li><a class="lastitem" href="work.html">Experience</a></li>
+    </ul>
+</nav>
+<main>
+    <section>
+        <h1>Photography Portfolio</h1>
+        <p>Photography is one of my favourite hobbies, so here are a few of my favourite pictures.</p>
+        <a href="images/rosie.png" data-lightbox="projects" data-title="Rosie">
+            <img src="images/rsz_rosie.png" alt="">
+        </a>
+        <a href="images/rosie2.png" data-lightbox="projects" data-title="Rosie">
+            <img src="images/rsz_rosie2.png" alt="">
+        </a>
+        <a href="images/newriverside.png" data-lightbox="projects" data-title="New Riverside">
+            <img src="images/rsz_newriverside.png" alt="">
+        </a>
+        </a>
+        <a href="images/dragonfly.png" data-lightbox="projects" data-title="Dragonfly">
+            <img src="images/rsz_dragonfly.png">
+        </a>
+    </section>
+
+    <aside id="nav_list2">
+        <h3>Check Out All My Photos:</h3>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/geekystitch/" target="_blank">Personal Instagram</a></li>
+                <li><a href="https://www.instagram.com/thecutest_rosie/" target="_blank">A Really Cute Dog's
+                    Instagram</a></li>
+                <li><a href="https://www.instagram.com/thingscanonlygetbetterfromhere/" target="_blank">Photography
+                    Instagram</a></li>
+                <li><a href="https://www.facebook.com/danielle.livesay.1" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+
+    <aside>
+        <h3>Find More Of My Photos:</h3>
+        <nav id="nav_list">
+            <ul>
+                <li><a href="https://www.instagram.com/geekystitch/" target="_blank">Personal Instagram</a></li>
+                <li><a href="https://www.instagram.com/thecutest_rosie/" target="_blank">A Really Cute Dog's
+                    Instagram</a></li>
+                <li><a href="https://www.instagram.com/thingscanonlygetbetterfromhere/" target="_blank">Photography
+                    Instagram</a></li>
+                <li><a href="https://www.facebook.com/danielle.livesay.1" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+
+<footer>
+    <p> &copy;&nbsp;2017 Danny Livesay</p>
+    <p id="date"></p>
+
+    <script>
+        var d = new Date();
+        document.getElementById("date").innerHTML = d.toDateString();
+    </script>
+</footer>
+</body>
+
+</html>
